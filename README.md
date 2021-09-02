@@ -1,1 +1,1 @@
-# js-numberbaseball
+# js-numberBaseball
