@@ -47,6 +47,17 @@ $form.addEventListener('submit',(event)=>{
   const value = $input.value;
   $input.value = "";
   const vaild = cheakInput(value);
+  if(!vaild) return ;
+  if(answer.join('')=== value){
+    $logs.textContent = '홈런!'
+    return ;
+  }
+  if(tries.length >= 9) {
+    const massage = document.createTextNode(`패배! 정답은 ${answer.join('')}`);
+    $logs.appendChild(message);
+    return;
+  }
+  // 몇 스트라이크 볼인지 검사 
 });
 
 
